@@ -30,6 +30,7 @@ c = deconv(B, p3)
 
 csym = poly2sym(c)
 
+%Hasil
 p1 =
 
      1     5     3    10
@@ -90,3 +91,93 @@ x^2 - 3*x + 78
 
 
 Nomor 2 :
+>> p1 (x) = x^5 + 2*x^4 - 3*x^3 + 7*x^2 - 8*x + 7;
+p2 (x) = x^4 + 3*x^3 - 5*x^2 + 9*x + 11;
+p3 (x) = x^3 - 2*x^2 - 3*x + 9;
+p4 (x) = x^2 - 5*x + 13;
+p5 (x) = x + 5;
+
+% mengubah symbolic ke polynomial
+P1 = sym2poly(p1)
+
+
+P2 = sym2poly(p2)
+
+
+P3 = sym2poly(p3)
+
+
+P4 = sym2poly(p4)
+
+
+P5 = sym2poly(p5)
+
+
+
+% Mengubah nilai x menjadi 2
+
+p1value = polyval(P1, 2)
+
+p2value = polyval(P2, 2)
+
+p3value = polyval(P3, 2)
+
+p4value = polyval(P4, 2)
+
+p5value = polyval(P5, 2)
+
+%Hasil
+P1 =
+
+     1     2    -3     7    -8     7
+
+
+P2 =
+
+     1     3    -5     9    11
+
+
+P3 =
+
+     1    -2    -3     9
+
+
+P4 =
+
+     1    -5    13
+
+
+P5 =
+
+     1     5
+
+
+p1value =
+
+    59
+
+
+p2value =
+
+    49
+
+
+p3value =
+
+     3
+
+
+p4value =
+
+     7
+
+
+p5value =
+
+     7
+
+>> 
+
+
+Nomor 3 :
+
