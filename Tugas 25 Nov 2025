@@ -44,3 +44,60 @@ num/den =
 >> 
 
 Nomor 2:
+>> syms t u
+>> ft = u * (t+9);
+>> FLapft = laplace(ft)
+ 
+FLapft =
+ 
+(u*(9*s + 1))/s^2
+ 
+>> 
+>> ftb = exp(5*t);
+>> Flapftb = laplace(ftb)
+ 
+Flapftb =
+ 
+1/(s - 5)
+ 
+>> ftc = 5*t+7;
+>> Flapftc = laplace(ftc)
+ 
+Flapftc =
+ 
+(5*((7*s)/5 + 1))/s^2
+ 
+>> ftd = 5*u*t + 8*exp(7*t) + 12*exp(-8*t);
+>> FLapftd = laplace(ftd)
+ 
+FLapftd =
+ 
+8/(s - 7) + 12/(s + 8) + (5*u)/s^2
+ 
+>> fte = exp(-t) + 8*exp(7*t) + 8;
+>> FLapfte = laplace(fte)
+ 
+FLapfte =
+ 
+1/(s + 1) + 8/(s - 7) + 8/s
+ 
+>> ftf = 7*t^4 + 5*t^2 - exp(-7*t);
+>> FLapftf = laplace(fte)
+ 
+FLapftf =
+ 
+1/(s + 1) + 8/(s - 7) + 8/s
+ 
+>> FLapftg = 9*u*t + 5*exp(-3*t);
+>> ftg =9*u*t + 5*exp(-3*t);
+>> FLapftg = laplace(ftg)
+ 
+FLapftg =
+ 
+5/(s + 3) + (9*u)/s^2
+ 
+>> 
+
+Nomor 3
+
+
